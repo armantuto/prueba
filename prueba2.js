@@ -32,6 +32,7 @@ function sumarCantidadesPorLista() {
     var select = list.querySelector('.miSelect').value;
 
     var fija = 1
+    var numeroEnteroDiviso = 0
 
     var pacchiX = pacchi / select
     var numeroEntero = Math.floor(pacchiX);
@@ -48,9 +49,12 @@ function sumarCantidadesPorLista() {
      
     
      if (pacchiDaAdd > 0 && numeroEntero > 0 ) {
-        result += " + "  + pacchiDaAdd.toFixed(0) + " pachi "
-    }
-     
+        if(numeroEntero > 10 ) {
+        numeroEnteroDiviso = numeroEntero / 2 
+            numerEnteroDiviso += " + "  + pacchiDaAdd.toFixed(0) + " pachi "
+    }else{
+             result += " + "  + pacchiDaAdd.toFixed(0) + " pachi "
+     }
     if (pacchiDaAdd > 0 && numeroEntero < 1 ) {
         result += pacchiDaAdd.toFixed(0) + " pachi "
     }
