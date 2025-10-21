@@ -32,7 +32,6 @@ function sumarCantidadesPorLista() {
     var select = list.querySelector('.miSelect').value;
 
     var fija = 1
-    
 
     var pacchiX = pacchi / select
     var numeroEntero = Math.floor(pacchiX);
@@ -50,7 +49,8 @@ function sumarCantidadesPorLista() {
     
      if (pacchiDaAdd > 0 && numeroEntero > 0 ) {
         result += " + "  + pacchiDaAdd.toFixed(0) + " pachi "
-     }
+    }
+     
     if (pacchiDaAdd > 0 && numeroEntero < 1 ) {
         result += pacchiDaAdd.toFixed(0) + " pachi "
     }
