@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prueba2.css">
+</head>
+<body>
+    <div class="principal">
+        <div class="sinistra">
+        <div class="city-list">
+            <table>
+                <tr>
+                    <th>1</th>
+                    <th>pacchi</th>
+                    <th>spezzatura</th>
+                </tr>
+                
+                <tr>
+                    <td>PADERNO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura"  placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>COMO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura"  placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>LISSONE</td>
+                    <td><input type="number" class="amount" placeholder="0"  onfocus=""></td>
+                    <td><input type="number" class="spezzatura"  placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>SARONNO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura"  placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>BERGAMO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>USTO ARSIZIO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>PAVIA</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>MILANO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>LA SPEZIA</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura"  placeholder="0"></td>
+                </tr>
+                <tr> 
+                    <td>   Total: </td>
+                    <td class="total"><div class="tot">0</div></td>
+                    <td class="spezzTotal">0</td>
+                </tr>
+                <tr>
+                    <th>Bancale da:</th>
+                    <th>  <select    class="pacchi miSelect" miSelect" > mani
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option> 
+                      </select></th>
+                      <th>Mani</th>
+                </tr>
+                <tr class="last">
+                    <th>  <button onclick="sumarCantidadesPorLista()">Calcolo Bancale</button></th>
+                    <td class="lastTd"><p class="bancale" id="total">   </p></td>
+                </tr>
+               
+            </table>
+        </div>
+    
+    
+        <div class="city-list">
+            <table>
+                <tr>
+                    <th>2</th>
+                    <th>pacchi</th>
+                    <th>spezzatura</th>
+                </tr>
+                <tr>
+                    <td>UDINE</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>MONFALCONE</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura"  placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>BELLUNO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura"  placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>MESTRE</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>VICENZA</td>
+                    <td><input type="number" class="amount" placeholder="0"  onfocus=""></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>PADOVA</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>TREVISO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr> 
+                    <td>   Total: </td>
+                    <td class="total"><div class="tot">0</div></td>
+                    <td class="spezzTotal">0</td>
+                </tr>
+                <tr>
+                    <th>Bancale da:</th>
+                    <th>  <select    class="pacchi miSelect" class="miSelect"> mani
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option> 
+                      </select></th>
+                      <th>Mani</th>
+                </tr>
+                <tr class="last">
+                    <th>  <button onclick="sumarCantidadesPorLista()">Calcolo Bancale</button></th>
+                    <td class="lastTd"><p class="bancale" id="total">   </p></td>
+                </tr>
+            </table>
+             </div>
+            </div>
+    
+        <div class="destra">
+        <div class="city-list">
+            <table>
+                <tr>
+                    <th>3</th>
+                    <th>pacchi</th>
+                    <th>spezzatura</th>
+                </tr>
+                <tr>
+                    <td>TRENTO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>BOLZANO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>VERONA</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>BRESCIA</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>MANTOVA</td>
+                    <td><input type="number" class="amount" placeholder="0"  onfocus=""></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr> 
+                    <td>   Total: </td>
+                    <td class="total"><div class="tot">0</div></td>
+                    <td class="spezzTotal">0</td>
+                </tr>
+                <tr>
+                    <th>Bancale da:</th>
+                    <th>  <select    class="pacchi miSelect" class="miSelect"> mani
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option> 
+                      </select></th>
+                      <th>Mani</th>
+                </tr>
+                <tr class="last">
+                    <th>  <button onclick="sumarCantidadesPorLista()">Calcolo Bancale</button></th>
+                    <td class="lastTd"><p class="bancale" id="total">   </p></td>
+                </tr>
+            </table>
+             </div>
+    
+        <div class="city-list">
+            <table>
+                <tr>
+                    <th>4</th>
+                    <th>pacchi</th>
+                    <th>spezzatura</th>
+                </tr>
+                <tr>
+                    <td>PARMA</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                    <tr>
+                    <td>CREMONA</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr> 
+                    <td>   Total: </td>
+                    <td class="total"><div class="tot">0</div></td>
+                    <td class="spezzTotal">0</td>
+                </tr>
+                <tr>
+                    <th>Bancale da:</th>
+                    <th>  <select    class="pacchi miSelect"" class="miSelect"> mani
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option> 
+                      </select></th>
+                      <th>Mani</th>
+                </tr>
+                <tr class="last">
+                    <th>  <button onclick="sumarCantidadesPorLista()">Calcolo Bancale</button></th>
+                    <td class="lastTd"><p class="bancale" id="total">   </p></td>
+                </tr>
+            </table>
+                  </div>
+    
+
+        <div class="city-list">
+            <table>
+                <tr>
+                    <th>5</th>
+                    <th>pacchi</th>
+                    <th>spezzatura</th>
+                </tr>
+                <tr>
+                    <td>MODENA</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>RIMINI</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>RAVENNA</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+              
+                <tr> 
+                    <td>   Total: </td>
+                    <td class="total"><div class="tot">0</div></td>
+                    <td class="spezzTotal">0</td>
+                </tr>
+                <tr>
+                    <th>Bancale da:</th>
+                    <th>  <select    class="pacchi miSelect"" class="miSelect"> mani
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option> 
+                      </select></th>
+                      <th>Mani</th>
+                </tr>
+                <tr class="last">
+                    <th>  <button onclick="sumarCantidadesPorLista()">Calcolo Bancale</button></th>
+                    <td class="lastTd"><p class="bancale" id="total">   </p></td>
+                </tr>
+            </table>
+             </div>
+    
+        <div class="city-list">
+            <table>
+                <tr>
+                    <th>6</th>
+                    <th>pacchi</th>
+                    <th>spezzatura</th>
+                </tr>
+                <tr>
+                    <td>PRATO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                 <tr>
+                    <td>PRATO</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr> 
+                    <td>   Total: </td>
+                    <td class="total"><div class="tot">0</div></td>
+                    <td class="spezzTotal">0</td>
+                </tr>
+                <tr>
+                    <th>Bancale da:</th>
+                    <th>  <select    class="pacchi miSelect"" class="miSelect"> mani
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option> 
+                      </select></th>
+                      <th>Mani</th>
+                </tr>
+                <tr class="last">
+                    <th>  <button onclick="sumarCantidadesPorLista()">Calcolo Bancale</button></th>
+                    <td class="lastTd"><p class="bancale" id="total">   </p></td>
+                </tr>
+            </table>
+             </div>
+
+
+        <div class="city-list">
+            <table>
+                <tr>
+                    <th>7</th>
+                    <th>pacchi</th>
+                    <th>spezzatura</th>
+                </tr>
+                <tr>
+                    <td>BOLOGNA</td>
+                    <td><input type="number" class="amount" placeholder="0"></td>
+                    <td><input type="number" class="spezzatura" placeholder="0"></td>
+                </tr>
+                <tr> 
+                    <td>   Total: </td>
+                    <td class="total"><div class="tot">0</div></td>
+                    <td class="spezzTotal">0</td>
+                </tr>
+                <tr>
+                    <th>Bancale da:</th>
+                    <th>  <select    class="pacchi miSelect"" class="miSelect"> mani
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option> 
+                      </select></th>
+                      <th>Mani</th>
+                </tr>
+                <tr class="last">
+                    <th>  <button onclick="sumarCantidadesPorLista()">Calcolo Bancale</button></th>
+                    <td class="lastTd"><p class="bancale" id="total">   </p></td>
+                </tr>
+            </table>
+             </div>
+            </div>
+        </div>
+
+    <script src="prueba2.js"></script>
+</body>
+</html>
