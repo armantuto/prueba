@@ -49,7 +49,7 @@ function sumarCantidadesPorLista() {
      
     
      if (pacchiDaAdd > 0 && numeroEntero > 0 ) {
-        if(numeroEntero > 9 ) {
+        if(numeroEntero > 10 ) {
     numeroEnteroDiviso = numeroEntero / 2;
             numerEnteroDiviso += " + "  + pacchiDaAdd.toFixed(0) + " pachi "
     }else{
