@@ -1,3 +1,5 @@
+const { json } = require("stream/consumers");
+
 function sumarCantidadesPorLista() {
     // Obtener todas las listas de ciudades
     const cityLists = document.querySelectorAll('.city-list');
@@ -59,8 +61,17 @@ function sumarCantidadesPorLista() {
      if (spezzatura > 0) {
         result += " e " + spezzatura + " spezzature";
     }
-    let uniqueKey = "clave_" + index; // Usamos el índice del bucle para crear una clave única
-    localStorage.setItem(uniqueKey, pacchi,result);
+
+
+    let uniqueKey = "clave_" + index;
+
+let data = {
+    pacchi: total,
+    spezzatura: spezzatura,
+    texto: result
+};
+
+localStorage.setItem(uniqueKey, JSON.stringify(data));
     let popo = localStorage.getItem("clave_0", result)
     console.log(popo)
 
@@ -72,16 +83,21 @@ function sumarCantidadesPorLista() {
      list.querySelector('.bancale').innerText = result;
      
 
-            let popo0 = localStorage.getItem("clave_0", result)
-                let popo1 = localStorage.getItem("clave_1", result)
-                    let popo2 = localStorage.getItem("clave_2", result)
-                let popo3 = localStorage.getItem("clave_3", result)
-                    let popo4 = localStorage.getItem("clave_4", result)
-                        let popo5 = localStorage.getItem("clave_5", result)
-                            let popo6 = localStorage.getItem("clave_6", result)
-                             
-
-                               
-
+           let popo0 =  JSON.parse(localStorage.getItem("clave_0")) || 0;
+              let popo1 = JSON.parse(localStorage.getItem("clave_1")) || 0;
+                 let popo2 = JSON.parse(localStorage.getItem("clave_2")) || 0;
+                let popo3 = JSON.parse(localStorage.getItem("clave_3")) || 0;
+                   let popo4 = JSON.parse(localStorage.getItem("clave_4")) || 0;
+                       let popo05 = JSON.parse(localStorage.getItem("clave_5")) || 0;
+                            let popo6 =JSON.parse(localStorage.getItem("clave_6")) || 0;
+                              
+                            var si = popo0.pacchi + popo1.pacchi + popo2.pacchi + popo3.pacchi + popo4.pacchi + popo05.pacchi + popo6.pacchi
+                            var no = popo0.spezzatura + popo1.spezzatura + popo2.spezzatura + popo3.spezzatura+ popo4.spezzatura + popo05.spezzatura + popo6.spezzatura
+                            console.log(si)
+                            var totalCopi = si * 50;
+                            var totalCopias= totalCopi + no;
+                            document.getElementById("totalGeneral").innerText = "pacchi:" + " " + si +" " + "copie:" + " " +  totalCopias;
+                            
+   
     });
 }
