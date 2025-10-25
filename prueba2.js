@@ -32,7 +32,7 @@ function sumarCantidadesPorLista() {
 
     var pacchi = total
     var select = list.querySelector('.miSelect').value;
-        var pachiDa = list.querySelector('.pachiDa').value;
+        var pachiDa = list.querySelector('pachiDa').value;
 
     var fija = 1
 
