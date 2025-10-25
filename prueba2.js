@@ -32,6 +32,7 @@ function sumarCantidadesPorLista() {
 
     var pacchi = total
     var select = list.querySelector('.miSelect').value;
+        var pachiDa = list.querySelector('.pachiDa').value;
 
     var fija = 1
 
@@ -94,7 +95,7 @@ localStorage.setItem(uniqueKey, JSON.stringify(data));
                             var si = popo0.pacchi + popo1.pacchi + popo2.pacchi + popo3.pacchi + popo4.pacchi + popo05.pacchi + popo6.pacchi
                             var no = popo0.spezzatura + popo1.spezzatura + popo2.spezzatura + popo3.spezzatura+ popo4.spezzatura + popo05.spezzatura + popo6.spezzatura
                             console.log(si)
-                            var totalCopi = si * 50;
+                            var totalCopi = si * pachiDa;
                             var totalCopias= totalCopi + no;
                             document.getElementById("totalGeneral").innerText = "pacchi:" + " " + si +" " + "copie:" + " " +  totalCopias;
                             
